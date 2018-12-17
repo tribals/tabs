@@ -1,0 +1,9 @@
+{
+  "name": "tabs",
+  "version": "0.0.0",
+  "description": "Rage against a lot of tabs!",
+  "main": "index.js",
+  "repository": "git@github.com:tribals/tabs.git",
+  "author": "Anton Siluev <burning2007@ya.ru>",
+  "license": "MIT"
+}
