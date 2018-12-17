@@ -4,7 +4,7 @@
 #
 version: 2
 jobs:
-  build:
+  test:
     docker:
       # specify the version you desire here
       - image: circleci/node:8.12
@@ -36,4 +36,12 @@ jobs:
       # run tests!
       - run: yarn test
 
-
+workflows:
+  version: 2
+  features:
+    jobs:
+      - test:
+          filters:
+            branches:
+              only:
+                - feature/*
