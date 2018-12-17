@@ -44,4 +44,18 @@ workflows:
           filters:
             branches:
               only:
-                - /feature\/.*/
+                - feature/*
+  develop:
+    jobs:
+      - test:
+          filters:
+            branches:
+              only:
+                - develop
+  production:
+    jobs:
+      - test:
+          filters:
+            branches:
+              only:
+                - master
